@@ -1,0 +1,41 @@
+{
+  "name": "lime-basket-ds",
+  "version": "1.0.0",
+  "description": "Lime Basket Design System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run storybook",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seva32/lime-basket-ds.git"
+  },
+  "keywords": [
+    "pets",
+    "dogs",
+    "cats",
+    "toys",
+    "petshop",
+    "shopping",
+    "shop"
+  ],
+  "author": "Sebastian Fantini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seva32/lime-basket-ds/issues"
+  },
+  "homepage": "https://github.com/seva32/lime-basket-ds#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/react": "^6.2.9",
+    "babel-loader": "^8.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
