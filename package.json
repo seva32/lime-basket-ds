@@ -68,5 +68,8 @@
     "@babel/runtime": "^7.14.0",
     "@babel/runtime-corejs3": "^7.14.0",
     "@storybook/core": "^6.2.9"
-  }
+  },
+  "files": [
+    "/lib"
+  ]
 }
