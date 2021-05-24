@@ -1,4 +1,4 @@
-# Foobar
+# Lime Basket DS
 
 Lime Basket is a design system built on react.
 
