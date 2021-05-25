@@ -1,0 +1,10 @@
+{
+  "git.ignoreLimitWarning": true,
+  "javascript.format.enable": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.lintTask.enable": true
+}
