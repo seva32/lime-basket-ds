@@ -17,7 +17,7 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
         'storybook-button',
         `storybook-button--${size}`,
         mode,
-        'bg-red-500',
+        'bg-lime',
         'pl-5',
       ].join(' ')}
       style={backgroundColor && { backgroundColor }}
