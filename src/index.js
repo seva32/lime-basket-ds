@@ -1,3 +1,7 @@
-import Button from "./components/Button";
+import './styles/tailwind.css';
 
-export { Button };
+import Button from './components/Button';
+
+// export { Button };
+
+export default Button;
