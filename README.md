@@ -4,10 +4,10 @@ Lime Basket is a design system built on react.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install lime-basket-ds.
+Use the package manager [npm](https://npm.com) to install lime-basket-ds.
 
 ```bash
-pip install lime-basket-ds
+npm install lime-basket-ds
 ```
 
 ## Usage
