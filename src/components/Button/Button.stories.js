@@ -1,6 +1,6 @@
 import React from 'react'; // eslint-disable-line
 
-import { Button } from './Button';
+import Button from './Button';
 
 import '../../styles/tailwind.css';
 
@@ -14,25 +14,20 @@ export default {
 
 const Template = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
-  primary: true,
-  label: 'Button',
+export const ButtonSM = Template.bind({});
+ButtonSM.args = {
+  size: 'sm',
+  children: <div className="font-button whitespace-no-wrap">Button SM</div>,
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
+export const ButtonMD = Template.bind({});
+ButtonMD.args = {
+  size: 'md',
+  children: <div className="font-button whitespace-no-wrap">Button MD</div>,
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
+export const ButtonLG = Template.bind({});
+ButtonLG.args = {
+  size: 'lg',
+  children: <div className="font-button whitespace-no-wrap">Button LG</div>,
 };
