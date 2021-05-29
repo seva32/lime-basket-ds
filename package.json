@@ -10,6 +10,7 @@
     "dev": "npm run storybook",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
+    "prepare": "npm run build",
     "build": "rollup -c",
     "lint:js": "eslint src/**/*.js",
     "lint:fix": "eslint src/**/*.js --fix",
