@@ -11,10 +11,11 @@ const plugins = require('./config/tailwind/tailwindPlugins');
 module.exports = {
   corePlugins,
   variants,
-  // purge: {
-  //   enabled: true,
-  //   mode: 'all',
-  //   content: ['./src/**/*.jsx', './src/**/*.js'],
+  purge: {
+    enabled: true,
+    mode: 'all',
+    content: ['./src/**/*.jsx', './src/**/*.js'],
+  },
   darkMode: 'media',
   theme: {
     fontSize,
