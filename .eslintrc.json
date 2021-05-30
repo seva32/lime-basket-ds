@@ -16,6 +16,7 @@
         "operator-linebreak": "off",
         "react/jsx-props-no-spreading": "off",
         "template-curly-spacing": "off",
+        "implicit-arrow-linebreak": "off",
         "indent": [
             "error",
             2,
@@ -84,10 +85,6 @@
             {
                 "allow": "single-child"
             }
-        ],
-        "implicit-arrow-linebreak": [
-            "warn",
-            "below"
         ],
         "object-curly-newline": "off",
         "jsx-a11y/label-has-associated-control": [

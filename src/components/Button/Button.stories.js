@@ -2,10 +2,8 @@ import React from 'react'; // eslint-disable-line
 
 import Button from './Button';
 
-import '../../styles/tailwind.css';
-
 export default {
-  title: 'Example/Button',
+  title: 'Button',
   component: Button,
   // argTypes: {
   //   backgroundColor: { control: 'color' },
