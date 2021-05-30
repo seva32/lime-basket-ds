@@ -1,6 +1,6 @@
 # Lime Basket DS
 
-Lime Basket is a design system built on react.
+Lime Basket is a (WIP) design system built with react and tailwindcss.
 
 ## Installation
 
