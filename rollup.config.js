@@ -27,8 +27,9 @@ export default {
     },
     {
       file: packageJson.module,
-      format: 'esm',
+      format: 'es',
       sourcemap: true,
+      exports: 'named',
     },
   ],
   external: [/@babel\/runtime/, Object.keys(externals)],

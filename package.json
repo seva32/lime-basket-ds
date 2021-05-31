@@ -67,6 +67,7 @@
     "autoprefixer": "^10.2.5",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
+    "classnames": "^2.3.1",
     "eslint": "^7.27.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-problems": "^5.0.0",
@@ -101,7 +102,6 @@
     "tailwindcss": "^2.1.2"
   },
   "dependencies": {
-    "@babel/runtime": "^7.14.0",
     "@babel/runtime-corejs3": "^7.14.0",
     "prop-types": "^15.7.2"
   },

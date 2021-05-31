@@ -1,3 +1,2 @@
-import Card from './Card';
-
-export default Card;
+/* eslint-disable import/prefer-default-export */
+export { default as Card } from './Card';

@@ -13,9 +13,9 @@ import '../../styles/tailwind.css';
  * @param {function} handleClick onClick function handler, opt
  * @param {function} handleKeyDown onKeyDown function handler, opt
  * @param {boolean} arrowDown places the arrow icon downwards, opt
- * @param {boolean} disabled disabled prop
- * @param {boolean} noArrow dont show arrow
- * @param {boolean} submit submit type
+ * @param {boolean} disabled disabled prop, opt
+ * @param {boolean} noArrow dont show arrow, opt
+ * @param {boolean} submit submit type, opt
  */
 
 function Button({

@@ -1,4 +1,4 @@
 import './styles/tailwind.css';
 
-export { default as Button } from './components/Button';
-export { default as Card } from './components/Card';
+export { Button } from './components/Button';
+export { Card } from './components/Card';
