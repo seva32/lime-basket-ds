@@ -7,7 +7,9 @@
           "browsers": ["last 2 versions"]
         },
         "debug": false,
-        "loose": true
+        "loose": true,
+        "corejs": 3,
+        "useBuiltIns": "usage"
       }
     ],
     "@babel/preset-react"
