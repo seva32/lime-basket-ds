@@ -2,32 +2,13 @@
   "presets": [
     [
       "@babel/preset-env",
-      {
-        "targets": {
-          "browsers": ["last 2 versions"]
-        },
-        "debug": false,
-        "loose": true,
-        "corejs": 3,
-        "useBuiltIns": "usage"
-      }
+      { "modules": false, "useBuiltIns": "usage", "corejs": 3 }
     ],
     "@babel/preset-react"
   ],
   "plugins": [
-    [
-      "@babel/plugin-transform-runtime",
-      {
-        "absoluteRuntime": false,
-        "corejs": 3,
-        "helpers": true,
-        "regenerator": true,
-        "version": "7.14.0",
-        "proposals": true
-      }
-    ],
-    ["@babel/plugin-proposal-private-property-in-object", { "loose": true }],
+    ["@babel/plugin-proposal-private-methods", { "loose": true }],
     ["@babel/plugin-proposal-class-properties", { "loose": true }],
-    ["@babel/plugin-proposal-private-methods", { "loose": true }]
+    ["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
   ]
 }

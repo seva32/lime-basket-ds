@@ -1,63 +1,55 @@
-import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-import { nodeResolve } from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
+import external from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
+import resolve from '@rollup/plugin-node-resolve';
 import babel from '@rollup/plugin-babel';
-import replace from '@rollup/plugin-replace';
-import image from '@rollup/plugin-image';
-// import livereload from "rollup-plugin-livereload";
-// import serve from "rollup-plugin-serve";
+import json from '@rollup/plugin-json';
+import url from '@rollup/plugin-url';
+import commonjs from '@rollup/plugin-commonjs';
+import alias from '@rollup/plugin-alias';
+import path from 'path';
 
-const packageJson = require('./package.json');
+import pkg from './package.json';
 
-const externals = {
-  react: 'React',
-  'react-dom': 'ReactDOM',
-  'react-scripts': 'ReactScripts',
-};
+const PROJECT_NODE_MODULES = path.resolve(__dirname, './node_modules');
 
 export default {
   input: 'src/index.js',
+  external: ['react-router', 'react-router-dom'],
   output: [
     {
-      file: packageJson.main,
+      file: pkg.main,
       format: 'cjs',
-      sourcemap: true,
       exports: 'named',
     },
     {
-      file: packageJson.module,
-      format: 'esm',
-      sourcemap: true,
+      file: pkg.module,
+      format: 'es',
       exports: 'named',
     },
   ],
-  external: [/@babel\/runtime/, Object.keys(externals)],
   plugins: [
-    image(),
-    postcss({
-      extensions: ['.css'],
+    alias({
+      entries: [
+        {
+          find: 'react-router-dom',
+          replacement: path.join(PROJECT_NODE_MODULES, 'react-router-dom/'),
+        },
+      ],
     }),
-    nodeResolve({
+    external(),
+    postcss({
+      modules: false,
+    }),
+    url(),
+    babel({
+      babelHelpers: 'bundled',
+      exclude: ['node_modules/**', '*.stories.js'],
+      presets: ['@babel/react'],
+    }),
+    resolve({
       extensions: ['.js', '.jsx'],
     }),
-    peerDepsExternal(),
-    replace({
-      'process.env.NODE_ENV': JSON.stringify('production'),
-      preventAssignment: true,
-    }),
-    babel({
-      babelHelpers: 'runtime',
-      exclude: '!(node_modules/@storybook/addons/src/index.js)node_modules/**',
-    }),
     commonjs(),
-    // serve({
-    //   open: true,
-    //   verbose: true,
-    //   contentBase: ["", "public"],
-    //   host: "localhost",
-    //   port: 3000,
-    // }),
-    // livereload({ watch: "lib" }),
+    json(),
   ],
 };

@@ -41,6 +41,8 @@ const Link = ({
     </>
   );
 
+  if (typeof window === 'undefined') return null;
+
   if (to) {
     return (
       <RouterLink to={to} className={classNames} {...other}>
