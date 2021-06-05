@@ -14,7 +14,7 @@ const PROJECT_NODE_MODULES = path.resolve(__dirname, './node_modules');
 
 export default {
   input: 'src/index.js',
-  external: ['react-router', 'react-router-dom'],
+  external: ['react-router', 'react-router-dom', /@babel\/runtime/],
   output: [
     {
       file: pkg.main,
@@ -42,7 +42,7 @@ export default {
     }),
     url(),
     babel({
-      babelHelpers: 'bundled',
+      babelHelpers: 'runtime',
       exclude: ['node_modules/**', '*.stories.js'],
       presets: ['@babel/react'],
     }),
