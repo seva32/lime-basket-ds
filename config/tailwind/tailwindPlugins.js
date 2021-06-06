@@ -82,7 +82,7 @@ module.exports = [
   plugin(({ addUtilities }) => {
     addUtilities(
       {
-        '.empty-content': {
+        '.tw-empty-content': {
           content: "''",
         },
       },
@@ -92,13 +92,13 @@ module.exports = [
   plugin(({ addUtilities }) => {
     addUtilities(
       {
-        '.border-top-solid-black': {
+        '.tw-border-top-solid-black': {
           'border-top': '5px solid black',
         },
-        '.thead-tr-md': {
+        '.tw-thead-tr-md': {
           'font-size': '1.3vw',
         },
-        '.thead-tr-lg': {
+        '.tw-thead-tr-lg': {
           'font-size': '1.45vw',
         },
       },
@@ -113,7 +113,7 @@ module.exports = [
             ? value[0] / value[1]
             : value;
           return [
-            `.${e(`aspect-ratio-${modifier}`)}`,
+            `.${e(`tw-aspect-ratio-${modifier}`)}`,
             {
               paddingBottom:
                 aspectRatio === 0 ? '0' : `${(1 / aspectRatio) * 100}%`,
@@ -138,10 +138,10 @@ module.exports = [
     delete colors.default;
 
     const colorMap = Object.keys(colors).map((color) => ({
-      [`.border-t-${color}`]: { borderTopColor: colors[color] },
-      [`.border-r-${color}`]: { borderRightColor: colors[color] },
-      [`.border-b-${color}`]: { borderBottomColor: colors[color] },
-      [`.border-l-${color}`]: { borderLeftColor: colors[color] },
+      [`.tw-border-t-${color}`]: { borderTopColor: colors[color] },
+      [`.tw-border-r-${color}`]: { borderRightColor: colors[color] },
+      [`.tw-border-b-${color}`]: { borderBottomColor: colors[color] },
+      [`.tw-border-l-${color}`]: { borderLeftColor: colors[color] },
     }));
     const utilities = Object.assign({}, ...colorMap);
 

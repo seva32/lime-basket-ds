@@ -1,12 +1,12 @@
 module.exports = {
   // general
-  '.break-inside-avoid': {
+  '.tw-break-inside-avoid': {
     '-webkit-break-inside': 'avoid',
     '-moz-break-inside': 'avoid',
     'break-inside': 'avoid',
   },
   // carousel
-  '.slides *': {
+  '.tw-slides *': {
     'user-select': 'none',
     '-ms-user-select': 'none',
     '-moz-user-select': 'none',
@@ -14,46 +14,46 @@ module.exports = {
     '-webkit-user-select': 'none',
     '-webkit-touch-callout': 'none',
   },
-  '.slide-image:hover + .carousel-controls label': {
+  '.tw-slide-image:hover + .tw-carousel-controls label': {
     opacity: 0.5,
   },
-  '.carousel-controls label:hover': {
+  '.tw-carousel-controls label:hover': {
     opacity: 1,
   },
-  'input:checked + .slide-container .slide-image': {
+  'input:checked + .tw-slide-container .tw-slide-image': {
     opacity: 1,
     transform: 'scale(1)',
     transition: 'opacity 1s ease-in-out',
   },
-  'input#img-1:checked ~ .carousel-dots label#img-dot-1': {
+  'input#img-1:checked ~ .tw-carousel-dots label#img-dot-1': {
     opacity: 1,
   },
-  'input#img-2:checked ~ .carousel-dots label#img-dot-2': {
+  'input#img-2:checked ~ .tw-carousel-dots label#img-dot-2': {
     opacity: 1,
   },
-  'input#img-3:checked ~ .carousel-dots label#img-dot-3': {
+  'input#img-3:checked ~ .tw-carousel-dots label#img-dot-3': {
     opacity: 1,
   },
-  'input:checked + .slide-container .carousel-controls label': {
+  'input:checked + .tw-slide-container .tw-carousel-controls label': {
     display: 'block',
   },
-  '.font-0': {
+  '.tw-font-0': {
     'font-size': 0,
   },
   // animejs slider
-  '.absolute-centerX': {
+  '.tw-absolute-centerX': {
     position: 'absolute',
     top: '50%',
     left: '50%',
     transform: 'translateX(-50%, -50%)',
   },
-  '.absolute-center': {
+  '.tw-absolute-center': {
     position: 'absolute',
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
   },
-  '.slider__arrow::before': {
+  '.tw-slider__arrow::before': {
     content: "''",
     position: 'absolute',
     top: 0,
@@ -66,13 +66,13 @@ module.exports = {
     'border-style': 'solid',
     'border-width': '4px 0 0 4px',
   },
-  '.slider__arrow_prev::before': {
+  '.tw-slider__arrow_prev::before': {
     transform: 'rotate(-45deg)',
   },
-  '.slider__arrow_next::before': {
+  '.tw-slider__arrow_next::before': {
     transform: 'rotate(135deg)',
   },
-  '.nav-control::before': {
+  '.tw-nav-control::before': {
     content: "''",
     position: 'absolute',
     top: 0,
@@ -85,15 +85,15 @@ module.exports = {
     'border-radius': '50%',
     background: 'currentColor',
   },
-  '.slider-list::before': {
+  '.tw-slider-list::before': {
     content: "''",
     display: 'block',
     'padding-top': 'calc(9 / 16 * 100%)',
   },
-  '.slider-list__item': {
+  '.tw-slider-list__item': {
     transform: 'translateX(100%)',
   },
-  '.slider-list__item_active': {
+  '.tw-slider-list__item_active': {
     transform: 'translateX(0)',
   },
 };

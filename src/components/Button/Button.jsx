@@ -30,15 +30,15 @@ function Button({
   submit,
 }) {
   return (
-    <div className={`hero-button-wrap ${padding || 'p-8 pt-0'}`}>
-      <div className="bg-lime hero-clip-button hero-button-shadow relative">
+    <div className={`tw-hero-button-wrap ${padding || 'tw-p-8 tw-pt-0'}`}>
+      <div className="tw-bg-lime tw-hero-clip-button tw-hero-button-shadow tw-relative">
         <button
           className={classnames(
-            'w-full flex flex-no-wrap justify-between items-center',
+            'tw-w-full tw-flex tw-flex-no-wrap tw-justify-between tw-items-center',
             {
-              'h-48p': size === 'lg',
-              'h-40p': size === 'md',
-              'h-30p': size === 'sm',
+              'tw-h-48p': size === 'lg',
+              'tw-h-40p': size === 'md',
+              'tw-h-30p': size === 'sm',
             },
           )}
           type={submit ? 'submit' : 'button'}
@@ -47,27 +47,30 @@ function Button({
           disabled={disabled}
         >
           <div
-            className={classnames('flex justify-center items-center w-full', {
-              'pl-6': size === 'lg',
-              'pl-5': size === 'md',
-              'pl-4': size === 'sm',
-              'px-6': size === 'lg' && noArrow,
-              'px-5': size === 'md' && noArrow,
-              'px-4': size === 'sm' && noArrow,
-            })}
+            className={classnames(
+              'tw-flex tw-justify-center tw-items-center tw-w-full',
+              {
+                'tw-pl-6': size === 'lg',
+                'tw-pl-5': size === 'md',
+                'tw-pl-4': size === 'sm',
+                'tw-px-6': size === 'lg' && noArrow,
+                'tw-px-5': size === 'md' && noArrow,
+                'tw-px-4': size === 'sm' && noArrow,
+              },
+            )}
           >
             {children}
           </div>
           {!noArrow && (
             <div
               className={classnames(
-                `flex justify-center items-center ${
-                  arrowDown ? 'transform rotate-90' : ''
+                `tw-flex tw-justify-center tw-items-center ${
+                  arrowDown ? 'tw-transform tw-rotate-90' : ''
                 }`,
                 {
-                  'px-6': size === 'lg',
-                  'px-5': size === 'md',
-                  'px-4': size === 'sm',
+                  'tw-px-6': size === 'lg',
+                  'tw-px-5': size === 'md',
+                  'tw-px-4': size === 'sm',
                 },
               )}
             >
