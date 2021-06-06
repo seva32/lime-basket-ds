@@ -12,11 +12,11 @@ module.exports = {
   corePlugins,
   variants,
   prefix: 'tw-',
-  // purge: {
-  //   enabled: true,
-  //   mode: 'all',
-  //   content: ['./src/**/*.jsx', './src/**/*.js'],
-  // },
+  purge: {
+    enabled: true,
+    mode: 'all',
+    content: ['./src/**/*.jsx', './src/**/*.js'],
+  },
   darkMode: 'media',
   theme: {
     fontSize,
