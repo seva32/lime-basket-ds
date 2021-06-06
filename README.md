@@ -18,9 +18,13 @@ import { Button } from "lime-basket-ds";
 const App = () => (<Button />);
 ```
 
+Tailwind classes are prefixed with 'tw-' (E.g. tw-is-8). Keep in mind when
+adding insets or spacing values.
+
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome. For major changes, please open an issue first to
+discuss what you would like to change.
 
 ## License
 

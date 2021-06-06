@@ -42,7 +42,7 @@ function Card({
 }) {
   return (
     <div
-      className={`tw-${width} tw-${height} tw-bg-white tw-rounded-md tw-shadow tw-overflow-hidden tw-flex tw-flex-col tw-flex-no-wrap tw-justify-between tw-relative tw-group`}
+      className={`${width} ${height} tw-bg-white tw-rounded-md tw-shadow tw-overflow-hidden tw-flex tw-flex-col tw-flex-no-wrap tw-justify-between tw-relative tw-group`}
     >
       <div className="tw-absolute tw-left-5% tw-top-35p md:tw-top-40p tw-card-logo-bg-lime tw-w-20 tw-h-20 tw-rounded-2xl tw-flex tw-justify-center tw-p-0.5 tw-z-10">
         <img
@@ -52,7 +52,7 @@ function Card({
         />
       </div>
 
-      <div className={`tw-absolute tw-${width} tw-${height}`}>
+      <div className={`tw-absolute ${width} ${height}`}>
         <Link href={linkHref} to={linkTo}>
           <img
             src={imgSrc}
@@ -118,8 +118,8 @@ Card.defaultProps = {
   name: '',
   description: '',
   buttonSize: 'md',
-  width: 'w-300p',
-  height: 'h-480p',
+  width: 'tw-w-300p',
+  height: 'tw-h-480p',
   history: null,
   linkTo: undefined,
   linkHref: undefined,
