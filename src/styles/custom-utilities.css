@@ -24,50 +24,50 @@
 
 /* responsive variants of custom utilities asi puedo usar [md]:rotate-0 */
 @responsive {
-  .rotate-0 {
+  .tw-rotate-0 {
     transform: rotate(0deg);
   }
 
-  .rotate-90 {
+  .tw-rotate-90 {
     transform: rotate(90deg);
   }
 
-  .rotate-180 {
+  .tw-rotate-180 {
     transform: rotate(180deg);
   }
 
-  .rotate-270 {
+  .tw-rotate-270 {
     transform: rotate(270deg);
   }
 
-  .thead-tr-md {
+  .tw-thead-tr-md {
     font-size: 1.3vw;
   }
 
-  .thead-tr-lg {
+  .tw-thead-tr-lg {
     font-size: '1.45vw';
   }
 }
 
 /* <div class="rotate-0 hover:rotate-90"></div> */
 @variants hover, focus {
-  .rotate-0 {
+  .tw-rotate-0 {
     transform: rotate(0deg);
   }
 
-  .rotate-90 {
+  .tw-rotate-90 {
     transform: rotate(90deg);
   }
 
-  .rotate-180 {
+  .tw-rotate-180 {
     transform: rotate(180deg);
   }
 
-  .rotate-270 {
+  .tw-rotate-270 {
     transform: rotate(270deg);
   }
 
-  .background-smooth-gradient {
+  .tw-background-smooth-gradient {
     background: linear-gradient(
       rgba(0, 0, 0, 0) 10%,
       rgba(0, 0, 0, 0.6),

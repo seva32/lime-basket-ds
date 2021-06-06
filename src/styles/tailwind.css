@@ -27,14 +27,14 @@ body {
   height: 100%; /* needed for container min-height */
 }
 
-.main-container {
+.tw-main-container {
   position: relative; /* needed for footer positioning*/
   height: auto !important; /* real browsers */
   min-height: 100%; /* real browsers */
   /* margin: 0 auto -20rem; footer height */
 }
 
-.main-footer {
+.tw-main-footer {
   position: absolute;
   width: 100%;
   /* height: 20rem; */
@@ -122,7 +122,7 @@ h3 {
 
 @tailwind utilities;
 
-.font-subtitle {
+.tw-font-subtitle {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -130,7 +130,7 @@ h3 {
   line-height: 1.8125rem;
 }
 
-.font-subtitle-semibold {
+.tw-font-subtitle-semibold {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
@@ -138,7 +138,7 @@ h3 {
   line-height: 1.8125rem;
 }
 
-.font-body {
+.tw-font-body {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -146,7 +146,7 @@ h3 {
   line-height: 1.375rem;
 }
 
-.font-body-bold {
+.tw-font-body-bold {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
@@ -154,7 +154,7 @@ h3 {
   line-height: 1.375rem;
 }
 
-.font-small {
+.tw-font-small {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -162,7 +162,7 @@ h3 {
   line-height: 1.25rem;
 }
 
-.font-pretitle {
+.tw-font-pretitle {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
@@ -172,7 +172,7 @@ h3 {
   text-transform: uppercase;
 }
 
-.font-button {
+.tw-font-button {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
@@ -182,7 +182,7 @@ h3 {
   text-transform: uppercase;
 }
 
-.font-link {
+.tw-font-link {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
@@ -190,7 +190,7 @@ h3 {
   line-height: 1.25rem;
 }
 
-.font-link-thin {
+.tw-font-link-thin {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 200;
@@ -198,7 +198,7 @@ h3 {
   line-height: 1.25rem;
 }
 
-.font-link-spaced {
+.tw-font-link-spaced {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
@@ -208,7 +208,7 @@ h3 {
   text-transform: uppercase;
 }
 
-.font-table-content {
+.tw-font-table-content {
   font-family: Inter;
   font-style: normal;
   font-weight: 400;
@@ -216,46 +216,46 @@ h3 {
   line-height: 1.3rem;
 }
 
-.font-2rem {
+.tw-font-2rem {
   font-size: 2rem;
 }
 
-.background-smooth {
+.tw-background-smooth {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.min-w-48p {
+.tw-min-w-48p {
   min-width: 48px;
 }
 
-.max-w-50 {
+.tw-max-w-50 {
   max-width: 50%;
 }
 
-.w-125per {
+.tw-w-125per {
   width: 125%;
 }
 
-.flex-basis-30 {
+.tw-flex-basis-30 {
   flex-basis: 30%;
 }
 
-.fixed-center {
+.tw-fixed-center {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.hero-bg-gradient {
+.tw-hero-bg-gradient {
   background-color: (to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
 }
 
-.hero-bg-position {
+.tw-hero-bg-position {
   background-position: 10% 65%;
 }
 
-.hero-clip-button {
+.tw-hero-clip-button {
   clip-path: polygon(
     3% 0,
     97% 0,
@@ -268,48 +268,48 @@ h3 {
   );
 }
 
-.background-lime-light {
+.tw-background-lime-light {
   background-color: rgba(186, 255, 41, 0.33);
 }
 
-.background-dirty-light {
+.tw-tw-background-dirty-light {
   background-color: #f2f2f2e3;
 }
 
-.hero-button-shadow {
+.tw-hero-button-shadow {
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.hero-button-wrap {
+.tw-hero-button-wrap {
   filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
 }
 
-.card-logo-bg-lime {
+.tw-card-logo-bg-lime {
   background-color: rgba(186, 255, 41, 0.3);
   border-radius: 1.625rem;
 }
 
-.text-red {
+.tw-text-red {
   color: #ec2f2f;
 }
 
-.scalex111 {
+.tw-scalex111 {
   --transform-scale-x: 1.11;
 }
 
-.scale135 {
+.tw-scale135 {
   transform: scale(1.35);
 }
 
-.bg-lime-70 {
+.tw-bg-lime-70 {
   background-color: rgba(186, 255, 41, 0.7);
 }
 
-.max-h-none {
+.tw-max-h-none {
   max-height: 0;
 }
 
-.backface {
+.tw-backface {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -330,11 +330,11 @@ h3 {
   z-index: 10;
 }
 
-.w-full-important {
+.tw-w-full-important {
   width: 100% !important;
 }
 
-.min-h-35vh {
+.tw-min-h-35vh {
   min-height: 35vh;
 }
 
@@ -342,12 +342,12 @@ h3 {
 
 /* modal  start */
 
-.modal-wrapper.fade-in {
+.tw-modal-wrapper.tw-fade-in {
   opacity: 1;
   transition: opacity linear 0.15s;
 }
 
-.modal-wrapper.fade-out {
+.tw-modal-wrapper.tw-fade-out {
   opacity: 0;
   transition: opacity linear 0.15s;
 }
@@ -356,17 +356,17 @@ h3 {
 
 /* reviews start */
 
-.review_section #modal.show {
+.tw-review_section #modal.show {
   opacity: 1;
   display: flex;
 }
 
-.review_section .modal-overlay.show {
+.tw-review_section .tw-modal-overlay.tw-show {
   display: block;
   opacity: 0.5;
 }
 
-.review_section .rate:not(:checked) > input {
+.tw-review_section .tw-rate:not(:checked) > input {
   top: -9999px;
   margin-left: -24px;
   width: 20px;
@@ -374,7 +374,7 @@ h3 {
   z-index: -10;
 }
 
-.review_section .rate:not(:checked) > label {
+.tw-review_section .tw-rate:not(:checked) > label {
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
@@ -383,39 +383,39 @@ h3 {
   height: 2.5rem;
 }
 
-.review_section .rate2 {
+.tw-review_section .tw-rate2 {
   float: none;
 }
 
-.review_section .rate:not(:checked) > label::before {
+.tw-review_section .tw-rate:not(:checked) > label::before {
   content: '★ ';
   position: relative;
   /* top: 0; */
 }
 
-.review_section .rate > input:checked ~ label {
+.tw-review_section .tw-rate > input:checked ~ label {
   color: #ffc700;
 }
 
-.review_section .rate > input:checked:focus + label,
-.review_section .rate > input:focus + label {
+.tw-review_section .tw-rate > input:checked:focus + label,
+.tw-review_section .tw-rate > input:focus + label {
   outline: -webkit-focus-ring-color auto 5px;
 }
 
-.review_section .rate:not(:checked) > label:hover,
-.review_section .rate:not(:checked) > label:hover ~ label {
+.tw-review_section .tw-rate:not(:checked) > label:hover,
+.tw-review_section .tw-rate:not(:checked) > label:hover ~ label {
   color: #deb217;
 }
 
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
+.tw-rate > input:checked + label:hover,
+.tw-rate > input:checked + label:hover ~ label,
+.tw-rate > input:checked ~ label:hover,
+.tw-rate > input:checked ~ label:hover ~ label,
+.tw-rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
 
-.checked {
+.tw-tw-checked {
   color: orange;
 }
 
@@ -423,7 +423,7 @@ h3 {
 
 /* hamburger menu start */
 
-.hamburger-line {
+.tw-hamburger-line {
   fill: none;
   stroke-width: 8;
   transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -431,35 +431,35 @@ h3 {
     stroke 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hamburger-line1 {
+.tw-hamburger-line1 {
   stroke-dasharray: 60 207;
   stroke-width: 8;
 }
 
-.hamburger-line2 {
+.tw-hamburger-line2 {
   stroke-dasharray: 60 60;
   stroke-width: 8;
 }
 
-.hamburger-line3 {
+.tw-hamburger-line3 {
   stroke-dasharray: 60 207;
   stroke-width: 8;
 }
 
-.hamburger-opened .hamburger-line1 {
+.tw-hamburger-opened .tw-hamburger-line1 {
   stroke-dasharray: 90 207;
   stroke-dashoffset: -134;
   stroke-width: 8;
   stroke: white;
 }
 
-.hamburger-opened .hamburger-line2 {
+.tw-hamburger-opened .tw-hamburger-line2 {
   stroke-dasharray: 1 60;
   stroke-dashoffset: -30;
   stroke-width: 8;
 }
 
-.hamburger-opened .hamburger-line3 {
+.tw-hamburger-opened .tw-hamburger-line3 {
   stroke-dasharray: 90 207;
   stroke-dashoffset: -134;
   stroke-width: 8;
@@ -470,14 +470,14 @@ h3 {
 
 /* insta card start */
 
-.truncate-overflow {
+.tw-truncate-overflow {
   position: relative;
   max-height: 5.5rem;
   overflow: hidden;
   padding-right: 1rem; /* space for ellipsis */
 }
 
-.truncate-overflow::before {
+.tw-truncate-overflow::before {
   position: absolute;
   content: '...';
   bottom: 0;
@@ -487,113 +487,113 @@ h3 {
 /* insta card end */
 
 @responsive {
-  .background-smooth {
+  .tw-background-smooth {
     background-color: rgba(0, 0, 0, 0.4);
   }
 
-  .min-h-29r {
+  .tw-min-h-29r {
     min-height: 29rem;
   }
 
-  .max-h-29r {
+  .tw-max-h-29r {
     max-height: 29rem;
   }
 
-  .min-h-36r {
+  .tw-min-h-36r {
     min-height: 36rem;
   }
 
-  .max-h-36r {
+  .tw-max-h-36r {
     max-height: 36rem;
   }
 
-  .min-h-43p {
+  .tw-min-h-43p {
     min-height: 43px;
   }
 
-  .max-h-43p {
+  .tw-max-h-43p {
     max-height: 43px;
   }
 
-  .min-h-53r {
+  .tw-min-h-53r {
     min-height: 53rem;
   }
 
-  .max-h-53r {
+  .tw-max-h-53r {
     max-height: 53rem;
   }
 
-  .min-h-45vh {
+  .tw-min-h-45vh {
     min-height: 45vh;
   }
 
-  .min-h-70vh {
+  .tw-min-h-70vh {
     min-height: 70vh;
   }
 
-  .min-h-600p {
+  .tw-min-h-600p {
     min-height: 600px;
   }
 
-  .min-h-720p {
+  .tw-min-h-720p {
     min-height: 720px;
   }
 
-  .min-w-16r {
+  .tw-min-w-16r {
     min-width: 16rem;
   }
 
-  .max-w-16r {
+  .tw-max-w-16r {
     max-width: 16rem;
   }
 
-  .min-w-20r {
+  .tw-min-w-20r {
     min-width: 20rem;
   }
 
-  .max-w-20r {
+  .tw-max-w-20r {
     max-width: 20rem;
   }
 
-  .min-w-140p {
+  .tw-min-w-140p {
     min-width: 140px;
   }
 
-  .min-w-150p {
+  .tw-min-w-150p {
     min-width: 150px;
   }
 
-  .min-w-24p {
+  .tw-min-w-24p {
     min-width: 24px;
   }
 
-  .max-w-24p {
+  .tw-max-w-24p {
     max-width: 24px;
   }
 
-  .min-w-30r {
+  .tw-min-w-30r {
     min-width: 30rem;
   }
 
-  .max-w-30r {
+  .tw-max-w-30r {
     max-width: 30rem;
   }
 
-  .min-w-565p {
+  .tw-min-w-565p {
     min-width: 565px;
   }
 
-  .min-w-720p {
+  .tw-min-w-720p {
     min-width: 720px;
   }
 }
 
 @variants hover, focus {
-  .background-smooth {
+  .tw-background-smooth {
     background-color: rgba(0, 0, 0, 0.4);
   }
 
-  .background-smooth-gradient {
+  .tw-background-smooth-gradient {
     background: linear-gradient(
       rgba(0, 0, 0, 0) 10%,
       rgba(0, 0, 0, 0.6),
@@ -601,7 +601,7 @@ h3 {
     );
   }
 
-  .background-smooth-to-right {
+  .tw-background-smooth-to-right {
     background: linear-gradient(
       to right,
       rgba(0, 0, 0, 0) 40%,
@@ -617,14 +617,14 @@ h3 {
   }
   /* navbar start */
 
-  .navicon {
+  .tw-navicon {
     width: 1.125em;
     height: 0.125em;
     background-color: #3d4852;
   }
 
-  .navicon::before,
-  .navicon::after {
+  .tw-navicon::before,
+  .tw-navicon::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -634,11 +634,11 @@ h3 {
     background: #3d4852;
   }
 
-  .navicon::before {
+  .tw-navicon::before {
     top: 5px;
   }
 
-  .navicon::after {
+  .tw-navicon::after {
     top: -5px;
   }
 
@@ -652,20 +652,20 @@ h3 {
     display: block;
   } */
 
-  .menu-btn:checked ~ .menu-icon .navicon {
+  .tw-menu-btn:checked ~ .tw-menu-icon .navicon {
     background: transparent;
   }
 
-  .menu-btn:checked ~ .menu-icon .navicon::before {
+  .tw-menu-btn:checked ~ .tw-menu-icon .tw-navicon::before {
     transform: rotate(-45deg);
   }
 
-  .menu-btn:checked ~ .menu-icon .navicon::after {
+  .tw-menu-btn:checked ~ .tw-menu-icon .tw-navicon::after {
     transform: rotate(45deg);
   }
 
-  .menu-btn:checked ~ .menu-icon .navicon::before,
-  .menu-btn:checked ~ .menu-icon .navicon::after {
+  .tw-menu-btn:checked ~ .tw-menu-icon .tw-navicon::before,
+  .tw-menu-btn:checked ~ .tw-menu-icon .tw-navicon::after {
     top: 0;
   }
 
@@ -681,13 +681,13 @@ h3 {
 
   /* products list start */
 
-  .t-head-products {
+  .tw-t-head-products {
     left: -9999px;
     position: absolute;
     visibility: hidden;
   }
 
-  .tr-products {
+  .tw-tr-products {
     border-bottom: 0;
     display: flex;
     flex-direction: row;

@@ -42,50 +42,50 @@ function Card({
 }) {
   return (
     <div
-      className={`${width} ${height} bg-white rounded-md shadow overflow-hidden flex flex-col flex-no-wrap justify-between relative group`}
+      className={`tw-${width} tw-${height} tw-bg-white tw-rounded-md tw-shadow tw-overflow-hidden tw-flex tw-flex-col tw-flex-no-wrap tw-justify-between tw-relative tw-group`}
     >
-      <div className="absolute left-5% top-35p md:top-40p card-logo-bg-lime w-20 h-20 rounded-2xl flex justify-center p-0.5 z-10">
+      <div className="tw-absolute tw-left-5% tw-top-35p md:tw-top-40p tw-card-logo-bg-lime tw-w-20 tw-h-20 tw-rounded-2xl tw-flex tw-justify-center tw-p-0.5 tw-z-10">
         <img
           src={brandLogo}
           alt="brand logo"
-          className="relative max-h-full min-w-full max-w-full object-cover"
+          className="tw-relative tw-max-h-full tw-min-w-full tw-max-w-full tw-object-cover"
         />
       </div>
 
-      <div className={`absolute ${width} ${height}`}>
+      <div className={`tw-absolute tw-${width} tw-${height}`}>
         <Link href={linkHref} to={linkTo}>
           <img
             src={imgSrc}
             alt="thumbnail.jpg"
-            className="min-h-full max-h-full"
+            className="tw-min-h-full tw-max-h-full"
           />
         </Link>
       </div>
 
       <div
-        className={`w-full flex-grow-0 flex justify-center items-center relative h-32 ${
-          mainTitle ? 'bg-space' : 'bg-transparent'
+        className={`tw-w-full tw-flex-grow-0 tw-flex tw-justify-center tw-items-center tw-relative tw-h-32 ${
+          mainTitle ? 'tw-bg-space' : 'tw-bg-transparent'
         }`}
       >
-        {mainTitle && <h2 className="text-dirty">{mainTitle}</h2>}
+        {mainTitle && <h2 className="tw-text-dirty">{mainTitle}</h2>}
       </div>
 
-      <div className="relative flex flex-col">
+      <div className="tw-relative tw-flex tw-flex-col">
         {name && description && (
-          <div className="absolute left-5% right-5% bottom-60p px-4 rounded-lg z-0">
+          <div className="tw-absolute tw-left-5% tw-right-5% tw-bottom-60p tw-px-4 tw-rounded-lg tw-z-0">
             <Link to={linkTo} href={linkHref}>
-              <div className="absolute inset-0 bg-space opacity-50 z-negative rounded-lg" />
-              <h3 className="text-white">{name}</h3>
-              <div className="hidden group-hover:inline-block font-body text-white">
+              <div className="tw-absolute tw-inset-0 tw-bg-space tw-opacity-50 tw-z-negative tw-rounded-lg" />
+              <h3 className="tw-text-white">{name}</h3>
+              <div className="tw-hidden group-hover:tw-inline-block tw-font-body tw-text-white">
                 {description}
               </div>
             </Link>
           </div>
         )}
-        <div className="z-40 absolute bottom-10p left-0 right-0">
+        <div className="tw-z-40 tw-absolute tw-bottom-10p tw-left-0 tw-right-0">
           <Link to={buttonLinkTo} href={buttonLinkHref}>
-            <Button size={buttonSize} padding="px-4">
-              <div className="font-button whitespace-no-wrap">
+            <Button size={buttonSize} padding="tw-px-4">
+              <div className="tw-font-button tw-whitespace-no-wrap">
                 {buttonContent}
               </div>
             </Button>
