@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
 import { Button } from '../Button';
 import { Link } from '../Link';
@@ -38,11 +39,14 @@ function Card({
   buttonContent,
   width,
   height,
+  className,
   history, // eslint-disable-line
 }) {
   return (
     <div
-      className={`${width} ${height} tw-bg-white tw-rounded-md tw-shadow tw-overflow-hidden tw-flex tw-flex-col tw-flex-no-wrap tw-justify-between tw-relative tw-group`}
+      className={classnames(
+        `${width} ${height} tw-bg-white tw-rounded-md tw-shadow tw-overflow-hidden tw-flex tw-flex-col tw-flex-no-wrap tw-justify-between tw-relative tw-group ${className}`,
+      )}
     >
       <div className="tw-absolute tw-left-5% tw-top-35p md:tw-top-40p tw-card-logo-bg-lime tw-w-20 tw-h-20 tw-rounded-2xl tw-flex tw-justify-center tw-p-0.5 tw-z-10">
         <img
@@ -111,6 +115,7 @@ Card.propTypes = {
   buttonContent: PropTypes.node.isRequired,
   width: PropTypes.string,
   height: PropTypes.string,
+  className: PropTypes.string,
 };
 
 Card.defaultProps = {
@@ -125,6 +130,7 @@ Card.defaultProps = {
   linkHref: undefined,
   buttonLinkTo: undefined,
   buttonLinkHref: undefined,
+  className: '',
 };
 
 export default Card;

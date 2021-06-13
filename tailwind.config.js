@@ -7,6 +7,7 @@ const inset = require('./config/tailwind/tailwindInset');
 const fontSize = require('./config/tailwind/tailwindFontsize');
 const customColors = require('./config/tailwind/tailwindCustomColors');
 const plugins = require('./config/tailwind/tailwindPlugins');
+const safelist = require('./config/tailwind/tailwindSafelist');
 
 module.exports = {
   corePlugins,
@@ -16,6 +17,11 @@ module.exports = {
     enabled: true,
     mode: 'all',
     content: ['./src/**/*.jsx', './src/**/*.js'],
+    options: {
+      safelist,
+      blocklist: [/^debug-/],
+      keyframes: true,
+    },
   },
   darkMode: 'media',
   theme: {

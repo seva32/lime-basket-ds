@@ -28,6 +28,7 @@ function Button({
   disabled,
   noArrow,
   submit,
+  id,
 }) {
   return (
     <div className={`tw-hero-button-wrap ${padding || 'tw-p-8 tw-pt-0'}`}>
@@ -45,6 +46,7 @@ function Button({
           onClick={handleClick}
           onKeyDown={handleKeyDown}
           disabled={disabled}
+          id={id}
         >
           <div
             className={classnames(
@@ -99,6 +101,7 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   noArrow: PropTypes.bool,
   submit: PropTypes.bool,
+  id: PropTypes.string,
 };
 
 Button.defaultProps = {
@@ -109,6 +112,7 @@ Button.defaultProps = {
   disabled: false,
   noArrow: false,
   submit: false,
+  id: undefined,
 };
 
 export default Button;
