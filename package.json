@@ -1,6 +1,6 @@
 {
   "name": "lime-basket-ds",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "Lime Basket Design System",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
