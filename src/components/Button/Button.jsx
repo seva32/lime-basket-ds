@@ -16,6 +16,8 @@ import '../../styles/tailwind.css';
  * @param {boolean} disabled disabled prop, opt
  * @param {boolean} noArrow dont show arrow, opt
  * @param {boolean} submit submit type, opt
+ * @param {string} id id, opt
+ * @param {string} classname aditional classname, limited to helper classes list in readme.md
  */
 
 function Button({
@@ -29,9 +31,14 @@ function Button({
   noArrow,
   submit,
   id,
+  classname,
 }) {
   return (
-    <div className={`tw-hero-button-wrap ${padding || 'tw-p-8 tw-pt-0'}`}>
+    <div
+      className={`tw-hero-button-wrap ${
+        padding || 'tw-p-8 tw-pt-0'
+      } ${classname}`}
+    >
       <div className="tw-bg-lime tw-hero-clip-button tw-hero-button-shadow tw-relative">
         <button
           className={classnames(
@@ -102,6 +109,7 @@ Button.propTypes = {
   noArrow: PropTypes.bool,
   submit: PropTypes.bool,
   id: PropTypes.string,
+  classname: PropTypes.string,
 };
 
 Button.defaultProps = {
@@ -113,6 +121,7 @@ Button.defaultProps = {
   noArrow: false,
   submit: false,
   id: undefined,
+  classname: null,
 };
 
 export default Button;

@@ -23,11 +23,14 @@ import '../../styles/tailwind.css';
  * @param {string} buttonSize button size, sm, md or lg, opt, defaults to md
  * @param {string} width container width, opt, defaults to 300px
  * @param {string} height container height, opt, defaults to 480px
+ * @param {string} imgFit object fit prop, default cover
+ * @param {string} classname aditional classname, limited to helper classes list in readme.md
  */
 
 function Card({
   mainTitle,
   imgSrc,
+  imgFit,
   linkTo,
   linkHref,
   name,
@@ -39,13 +42,13 @@ function Card({
   buttonContent,
   width,
   height,
-  className,
+  classname,
   history, // eslint-disable-line
 }) {
   return (
     <div
       className={classnames(
-        `${width} ${height} tw-bg-white tw-rounded-md tw-shadow tw-overflow-hidden tw-flex tw-flex-col tw-flex-no-wrap tw-justify-between tw-relative tw-group ${className}`,
+        `${width} ${height} tw-bg-white tw-rounded-md tw-shadow tw-overflow-hidden tw-flex tw-flex-col tw-flex-no-wrap tw-justify-between tw-relative tw-group ${classname}`,
       )}
     >
       <div className="tw-absolute tw-left-5% tw-top-35p md:tw-top-40p tw-card-logo-bg-lime tw-w-20 tw-h-20 tw-rounded-2xl tw-flex tw-justify-center tw-p-0.5 tw-z-10">
@@ -61,7 +64,7 @@ function Card({
           <img
             src={imgSrc}
             alt="thumbnail.jpg"
-            className="tw-min-h-full tw-max-h-full"
+            className={`tw-min-h-full tw-max-h-full tw-object-${imgFit}`}
           />
         </Link>
       </div>
@@ -103,6 +106,7 @@ function Card({
 Card.propTypes = {
   mainTitle: PropTypes.string,
   imgSrc: PropTypes.string.isRequired,
+  imgFit: PropTypes.string,
   linkTo: PropTypes.string,
   linkHref: PropTypes.string,
   name: PropTypes.string,
@@ -115,11 +119,12 @@ Card.propTypes = {
   buttonContent: PropTypes.node.isRequired,
   width: PropTypes.string,
   height: PropTypes.string,
-  className: PropTypes.string,
+  classname: PropTypes.string,
 };
 
 Card.defaultProps = {
   mainTitle: '',
+  imgFit: 'cover',
   name: '',
   description: '',
   buttonSize: 'md',
@@ -130,7 +135,7 @@ Card.defaultProps = {
   linkHref: undefined,
   buttonLinkTo: undefined,
   buttonLinkHref: undefined,
-  className: '',
+  classname: '',
 };
 
 export default Card;

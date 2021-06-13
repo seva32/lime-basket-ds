@@ -42,4 +42,5 @@ CardNoTitle.args = {
   brandLogo:
     'https://res.cloudinary.com/seva32/image/upload/v1604425921/logo_rblope.svg',
   buttonContent: 'Add to cart',
+  imgFit: 'contain',
 };
