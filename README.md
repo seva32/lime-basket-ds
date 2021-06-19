@@ -28,7 +28,7 @@ discuss what you would like to change.
 
 ## License
 
-Unlicensed!
+ISC
 
 ## Available helper classes list
 

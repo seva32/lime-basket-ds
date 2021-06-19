@@ -59,7 +59,7 @@ function Card({
         />
       </div>
 
-      <div className={`tw-absolute ${width} ${height}`}>
+      <div className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
         <Link href={linkHref} to={linkTo}>
           <img
             src={imgSrc}
