@@ -15,7 +15,9 @@
     "lint:js": "eslint src/**/*.js",
     "lint:fix": "eslint src/**/*.js --fix",
     "lint": "npm run lint:fix",
-    "tw": "npx tailwind-config-viewer"
+    "tw": "npx tailwind-config-viewer",
+    "sgdev": "npx styleguidist server",
+    "sgbuild": "npx styleguidist server"
   },
   "repository": {
     "type": "git",
@@ -97,6 +99,7 @@
     "react-dom": "^17.0.2",
     "react-inspector": "^5.1.1",
     "react-router-dom": "^5.2.0",
+    "react-styleguidist": "^11.1.7",
     "rollup": "^2.49.0",
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",

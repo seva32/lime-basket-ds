@@ -14,6 +14,8 @@ import { truncate } from '../../helpers';
  * @param {string} href external links, opt
  * @param {string} to internal link, opt
  * @param {number} maxLength max length of characters, opt
+ * @version 1.1.11
+ * @author [Sebastian Fantini](https://github.com/seva32)
  */
 
 const Link = ({
@@ -84,11 +86,17 @@ const Link = ({
 };
 
 Link.propTypes = {
+  /** link content, opt */
   children: PropTypes.node,
+  /** classname, opt */
   className: PropTypes.string,
+  /** function, opt */
   onClick: PropTypes.func,
+  /** external links, opt */
   href: PropTypes.string,
+  /** internal link, opt */
   to: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  /** max length of characters, opt */
   maxLength: PropTypes.number,
 };
 
