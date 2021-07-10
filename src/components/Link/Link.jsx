@@ -1,10 +1,15 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link as RouterLink } from 'react-router-dom';
 import classnames from 'classnames';
 
 import { truncate } from '../../helpers';
+
+const STATUS = {
+  HOVERED: 'hovered', // TODO
+  NORMAL: 'normal', // TODO
+};
 
 /**
  * general purpose link, external and internal
@@ -27,6 +32,16 @@ const Link = ({
   maxLength,
   ...other
 }) => {
+  const [status, setStatus] = useState(STATUS.NORMAL);
+
+  const onMouseEnter = () => {
+    setStatus(STATUS.HOVERED);
+  };
+
+  const onMouseLeave = () => {
+    setStatus(STATUS.NORMAL);
+  };
+
   const onKeyPressHandler = () => {};
 
   const classNames = classnames(className, {
@@ -35,12 +50,16 @@ const Link = ({
 
   // prettier-ignore
   const content = (
-    <>
+    <span
+      className={status}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
       {maxLength > 0
         ? React.Children.map(children, (child) =>
           (typeof child === 'string' ? truncate(child, maxLength) : child))
         : children}
-    </>
+    </span>
   );
 
   if (typeof window === 'undefined') return null;

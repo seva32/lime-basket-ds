@@ -49,4 +49,5 @@ tw-m-1.5 tw-m-2 tw-m-2.5 tw-m-3 tw-m-3.5 tw-m-4 tw-m-5 tw-m-6 tw-m-7 tw-m-8
 tw-m-9 tw-my-0 tw-my-mx tw-my-0.5 tw-my-1 tw-my-1.5 tw-my-2 tw-my-2.5 tw-my-3
 tw-my-3.5 tw-my-4 tw-my-5 tw-my-6 tw-my-7 tw-my-8 tw-my-9 tw-mx-0 tw-mx-mx
 tw-mx-0.5 tw-mx-1 tw-mx-1.5 tw-mx-2 tw-mx-2.5 tw-mx-3 tw-mx-3.5 tw-mx-4 tw-mx-5
-tw-mx-6 tw-mx-7 tw-mx-8 tw-mx-9
+tw-mx-6 tw-mx-7 tw-mx-8 tw-mx-9 tw-h-full tw-max-w-full (responsive)
+tw-bg-lime (all primary colors) tw-w-full (responsive)
