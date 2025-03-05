@@ -17,7 +17,8 @@
     "lint": "npm run lint:fix",
     "tw": "npx tailwind-config-viewer",
     "sgdev": "npx styleguidist server",
-    "sgbuild": "npx styleguidist server"
+    "sgbuild": "npx styleguidist server",
+    "browserlist": "npx update-browserslist-db@latest"
   },
   "repository": {
     "type": "git",
@@ -114,6 +115,7 @@
   },
   "dependencies": {
     "@babel/runtime-corejs3": "^7.14.0",
+    "caniuse-lite": "^1.0.30001702",
     "prop-types": "^15.7.2"
   },
   "files": [
