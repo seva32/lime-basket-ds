@@ -19,7 +19,7 @@ const App = () => (<Button />);
 ```
 
 Tailwind classes are prefixed with 'tw-' (E.g. tw-is-8). Keep in mind when
-adding insets or spacing values.
+adding insets or spacing values in your code.
 
 ## Contributing
 
